@@ -1,0 +1,195 @@
+html {
+    scroll-behavior: smooth;
+}
+.header{
+    height: 60px;
+    background-color: beige;
+    box-shadow:  0 0 10px 0 black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+a {
+    color: black;
+}
+.logo{
+    text-transform: uppercase;
+    color: black;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+ }
+ .logo span { 
+     color: brown;
+ }
+ .menu {
+     width: 50%;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 30px;
+ }
+ #home {
+     background-image: url(../bg1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     
+ }
+ #about {
+     background-color: blanchedalmond;
+ }
+ #works {
+    background-image: url(../bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+ }
+ #contact {
+    background-color: beige;
+    height: 95vh;
+   
+}
+ .section {
+     height: 100vh;
+ }
+ 
+ .home-btn {
+    position: absolute;
+     left: 70px;
+     bottom: 40px;
+     width: 150px;
+     height: 30px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     background-color: red;
+     border: 3px coral;
+     text-align: center;
+ }
+ .image1 {
+     background-image: url(../about1.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 50%;
+     height: 70vh;
+     position: relative;
+     
+
+ }
+ .image1::before {
+    
+     content: '';
+     position: absolute;
+     border: 5px blue;
+     top: -20px;
+     left: -20px;
+     height: 100%;
+     width: 100%;
+     
+ }
+ .text1 {
+     
+     width: 60%;
+     padding-left: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 15px;
+     position: relative;
+ }
+ .text-header {
+     font-size: 30px;
+     padding-bottom: 20px;
+ }
+ .text2 {
+     color: coral;
+ }
+ .about-btn {
+    position: absolute;
+     top: 350px;  ;
+     left: 30px;
+     width: 155px;
+     height: 30px;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     background-color: aliceblue;
+     color: rgb(42, 95, 165);
+     border: 5px red;
+     text-align: center;
+     
+ }
+ .content-image {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .image {
+     height: 70vh;
+     width: 30%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     cursor: pointer;
+     overflow: hidden;
+     position: relative;
+    
+ }
+    .image:nth-child(1) {
+    background-image: url(../project3.png);
+    }
+    .image:nth-child(2) {
+       background-image: url(../project2.png);
+   }
+   .image:nth-child(3) {
+       background-image: url(../project3.png);
+   }
+ .image::before {
+     content: " My WorKs";
+     background-color: aqua;
+     width: 100%;
+     height: 70vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: -100%;
+     left: 0px;
+     transition-property: all;
+     transition-duration: 0.7s;
+     font-size: 30px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ .image:hover::before {
+    top: 0px;
+ }
+ .contact{
+     width: 30%;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px;
+
+ }
+ .contacts_map {
+     height: 70vh ;
+     width: 70%;
+     border: 5px coral;
+ }
+ .footer {
+    font-size: 15px;
+     background-color: aliceblue;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     height: 5vh;
+ }
